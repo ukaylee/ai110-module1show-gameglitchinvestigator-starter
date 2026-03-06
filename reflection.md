@@ -8,6 +8,16 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
+It keeps telling me to go lower even though I already went to 1. Then it keeps telling me to go higher even though I already went to 100. I would expect it to do the opposite.
+
+It won't let me make a new game.
+
+It doesn't make an error if I go out of bounds, it just records it as a guess.
+
+The attempts don't change.
+
+When I change the difficulty, it doesn't change the range to guess by.
+
 ---
 
 ## 2. How did you use AI as a teammate?

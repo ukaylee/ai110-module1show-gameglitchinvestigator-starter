@@ -1,3 +1,4 @@
+#FIX: Refactored logic into logic_utils.py using Copilot Agent mode
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
     if difficulty == "Easy":
@@ -42,6 +43,8 @@ def check_guess(guess, secret):
     if guess == secret:
         return "Win", "🎉 Correct!"
 
+    #FIXME: Logic breaks here. Hints are backwards. FIXED
+    #FIX: Switched the captions of Too High and Too Low to fix the bug where hints were backwards. I saw the bug and asked AI where it was found and it pointed me to this function and also proposed a solution which I implemented.
     try:
         if guess > secret:
             return "Too High", "📉 Go LOWER!"

@@ -45,6 +45,8 @@ if "history" not in st.session_state:
 st.subheader("Make a guess")
 
 st.info(
+    #FIXME: Hardcoded the range in the message, should be dynamic based on difficulty. FIXED
+    #FIX: Put low and high params instead of hardcoded values in the message.
     f"Guess a number between {low} and {high}. "
     f"Attempts left: {attempt_limit - st.session_state.attempts}"
 )
@@ -70,7 +72,8 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 if new_game:
-    # FIXME: Logic breaks here. Score and attempts don't reset properly.
+    # FIXME: Logic breaks here. Score and attempts don't reset properly. FIXED
+    # FIX: Added logic to reset attempts, score, status, and history when new game is started. AI helped me by telling me which params to reset and also identified this area as a bug.
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(low, high)
     st.session_state.score = 0

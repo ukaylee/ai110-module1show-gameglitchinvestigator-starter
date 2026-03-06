@@ -14,8 +14,6 @@ It won't let me make a new game.
 
 It doesn't make an error if I go out of bounds, it just records it as a guess.
 
-The attempts don't change.
-
 When I change the difficulty, it doesn't change the range to guess by.
 
 ---
